@@ -600,7 +600,7 @@ input {
   text-align: center;
 }
 
-@media (min-width: 376px) and (max-width: 1023px) { /*Стили этого запроса будут применяться только для экранных устройств с шириной области просмотра не более 1023px*/
+@media (min-width: 376px) and (max-width: 1023px) {
   .header-left, .header-right {
     display: none;
     max-width: none;
@@ -882,7 +882,7 @@ input {
 } 
 
 
-@media (max-width: 375px) { /*Стили этого запроса будут применяться только для экранных устройств с шириной области просмотра не более 375px*/
+@media (max-width: 375px) { 
   .header {
     height: 72px;
   }
