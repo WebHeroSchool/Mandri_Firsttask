@@ -9,20 +9,23 @@
   position: relative;
 }
 
+
 .container {
   height: inherit;
   margin: 0 auto;
   z-index: 1;
 }
 
+@media (min-width: 320px) { 
+  .container {
+    width: 280px;
+  }
+
 @media (min-width: 375px) { 
   .container {
     width: 280px;
   }
-  .main {
-    max-width: 768px;
-  }
-}
+ 
 @media (min-width: 768px) { 
   .container {
     width: 680px;
