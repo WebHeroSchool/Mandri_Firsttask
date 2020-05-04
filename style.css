@@ -294,94 +294,52 @@
   margin-block-start: 0;
 }
 
-.product__circle {
+.product__items {
   float: right;
   margin-block-start: 0;
 }
 
-.product__content ul li {
+.product__item {
   float: left;
   list-style: none;
+  width: 7px;
+  height: 7px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-right: 5px;
 }
 
 .product__circle_silver {
-  width: 7px;
-  height: 7px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
   background: #C4C4C4;
-  margin-right: 5px;
 } 
 
 .product__circle_black {
-  width: 7px;
-  height: 7px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
   background: #0E1211;
-  margin-right: 5px;
 } 
 
 .product__circle_red {
-  width: 7px;
-  height: 7px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
   background: #B62E3C;
-  margin-right: 5px;
 } 
 
 .product__circle_orange {
-  width: 7px;
-  height: 7px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
   background: #FDB431;
-  margin-right: 5px;
 } 
 
 .product__circle_copper {
-  width: 7px;
-  height: 7px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
   background: #E29D69;
-  margin-right: 5px;
 } 
 
 .product__circle_brown {
-  width: 7px;
-  height: 7px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
   background: #762E31;
-  margin-right: 5px;
 } 
 
 .product__circle_blue {
-  width: 7px;
-  height: 7px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
   background: #41479B;
-  margin-right: 5px;
 } 
 
 .product__circle_skyblue {
-  width: 7px;
-  height: 7px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
   background: #257DA9;
-  margin-right: 5px;
 } 
 
 .video {
@@ -688,85 +646,10 @@
     font: bolder 25px/24px montserratregular;
   }
 
-  .product__circle_silver {
+  .product_item {
     width: 20px;
     height: 20px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #C4C4C4;
-    margin-right: 5px;
-  } 
-
-  .product__circle_black {
-    width: 20px;
-    height: 20px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #0E1211;
-    margin-right: 5px;
-  } 
-
-  .product__circle_red {
-    width: 20px;
-    height: 20px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #B62E3C;
-    margin-right: 5px;
-  } 
-
-  .product__circle_orange {
-    width: 20px;
-    height: 20px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #FDB431;
-    margin-right: 5px;
-  } 
-
-  .product__circle_copper {
-    width: 20px;
-    height: 20px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #E29D69;
-    margin-right: 5px;
-  } 
-
-  .product__circle_brown {
-    width: 20px;
-    height: 20px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #762E31;
-    margin-right: 5px;
-  } 
-
-  .product__circle_blue {
-    width: 20px;
-    height: 20px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #41479B;
-    margin-right: 5px;
-  } 
-
-  .product__circle_skyblue {
-    width: 20px;
-    height: 20px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #257DA9;
-    margin-right: 5px;
-  } 
+  }	
 
   .main__mobile-back {
     display: block;
@@ -976,86 +859,11 @@
   .product__price {
     font: bolder 20px/19px montserratregular;
   }
-
-  .product__circle_silver {
-    width: 15px;
+  
+  .product_item {
+  	width: 15px;
     height: 15px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #C4C4C4;
-    margin-right: 5px;
-  } 
-
-  .product__circle_black {
-    width: 15px;
-    height: 15px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #0E1211;
-    margin-right: 5px;
-  } 
-
-  .product__circle_red {
-    width: 15px;
-    height: 15px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #B62E3C;
-    margin-right: 5px;
-  } 
-
-  .product__circle_orange {
-    width: 15px;
-    height: 15px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #FDB431;
-    margin-right: 5px;
-  } 
-
-  .product__circle_copper {
-    width: 15px;
-    height: 15px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #E29D69;
-    margin-right: 5px;
-  } 
-
-  .product__circle_brown {
-    width: 15px;
-    height: 15px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #762E31;
-    margin-right: 5px;
-  } 
-
-  .product__circle_blue {
-    width: 15px;
-    height: 15px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #41479B;
-    margin-right: 5px;
-  } 
-
-  .product__circle_skyblue {
-    width: 15px;
-    height: 15px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #257DA9;
-    margin-right: 5px;
-  } 
+  }	
 
   .main__mobile-back {
     display: block;
