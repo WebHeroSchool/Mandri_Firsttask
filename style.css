@@ -45,12 +45,12 @@
   .header, .main__wrap {
     width: 280px;
   }
-
+}
 @media (min-width: 375px) { 
   .header, .main__wrap {
     width: 280px;
   }
- 
+} 
 @media (min-width: 768px) { 
   .header, .main__wrap {
     width: 680px;
