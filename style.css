@@ -610,7 +610,7 @@
   .shop__img {
     width: 1300px;
     height: 415px;
-    object-fit:cover;
+    object-fit: cover;
   }
 
   .shop__title {
@@ -902,8 +902,8 @@
   }
 
   .product_item {
-	width: 15px;
-    height: 15px;
+  	height: 15px;
+  	width: 15px;
   }
 
   .main__mobile-back {
