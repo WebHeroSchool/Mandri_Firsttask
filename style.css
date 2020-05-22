@@ -274,6 +274,10 @@
   margin-bottom: 36px;
 }
 
+.product__content {
+  flex-basis: 230px;
+}
+
 .product__line {
   background: black;
   content: "";
@@ -284,25 +288,28 @@
 
 .product__img {
   margin-bottom: 10px;
-  margin-left: 10px;
+  margin-left: 23px;
 }
 
 .product__name {
   font-family: Gotham Pro, sans-serif;
   font-size: 12px;
   line-height: 11px;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  margin-left: 10px;
 }
 
 .product__price {
   font: bolder 14px/13px Gotham Pro, sans-serif;
   float: left;
   margin-block-start: 0;
+  margin-left: 10px;
 }
 
 .product__items {
   float: right;
   margin-block-start: 5px;
+  margin-right: 10px;
 }
 
 .product__item {
@@ -683,8 +690,12 @@
     margin-bottom: 65px;
   }
 
+  .product__content {
+    flex-basis: 208px;
+  }
+
   .product__name {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   .video {
@@ -813,12 +824,16 @@
     margin-bottom: 30px;
   }
 
+  .product-title {
+    padding-right: 13px;
+  }
+
   .product {
     margin-bottom: 80px;
   }
 
   .product__content {
-    flex-basis: 264px;
+    flex-basis: 280px;
   }
 
   .product__content:nth-child(n+4) {
@@ -832,20 +847,20 @@
   }
   
   .product__img {
-    display: inline-block;
-    margin-bottom: 6px;
-    margin-left: 20px;
-    width: 90%;
+    width: 230px;
+    display: block;
+    margin: 0 auto 37px auto;
   }
 
   .product__name {
     font-size: 20px;
     line-height: 19px;
-    margin-bottom: 15px;
+    margin: auto 8px 16px 8px;
   }
 
   .product__price {
     font: bolder 25px/24px Gotham Pro, sans-serif;
+    margin-left: 8px;
   }
 
   .product__item {
@@ -1100,8 +1115,8 @@
     margin-bottom: 75px;
   }
 
-  .product__content{
-    width: 100%;
+  .product__content {
+    flex-basis: 281px;
   }
   
   .product__content:nth-child(n+2) {
@@ -1415,8 +1430,8 @@
     margin-bottom: 75px;
   }
 
-  .product__content{
-    width: 100%;
+  .product__content {
+    flex-basis: 280px;
   }
   
   .product__content:nth-child(n+2) {
