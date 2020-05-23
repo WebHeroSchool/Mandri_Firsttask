@@ -411,34 +411,34 @@
 }
 
 .video__arrow {
-    position: relative;
-    width: 46px;
-    height: 1px;
-    background-color: white;
-    left: 10px;
-    display: block;
+  position: relative;
+  width: 46px;
+  height: 1px;
+  background-color: white;
+  left: 10px;
+  display: block;
 }
 
 .video__arrow::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 1px;
-    top: -2px;
-    right: -1px;
-    background-color: white;
-    transform: rotate(45deg);
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  top: -2px;
+  right: -1px;
+  background-color: white;
+  transform: rotate(45deg);
 }
 
 .video__arrow::before {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 1px;
-    top: 2px;
-    right: -1px;
-    background-color: white;
-    transform: rotate(-45deg);
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  top: 2px;
+  right: -1px;
+  background-color: white;
+  transform: rotate(-45deg);
 }
 
 .stories {
@@ -457,7 +457,7 @@
 
 .stories__content {
   position: relative;
-  flex-basis: 307px;
+  width: 30%;
 }
 
 .stories__img {
@@ -471,7 +471,6 @@
   font-family: Gotham Pro, sans-serif;
   font-size: 18px;
   line-height: 17px;
-  letter-spacing: 1px;
   margin-block-end: 0;
 }
 
@@ -479,7 +478,7 @@
   font-family: Gotham Pro, sans-serif;
   font-size: 14px;
   line-height: 17px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .stories__link {
@@ -501,7 +500,7 @@
   position: relative;
   width: 29px;
   height: 1px;
-  background-color: white;
+  background-color: black;
   left: 7px;
   display: block;
 }
@@ -513,7 +512,7 @@
   height: 1px;
   top: -2px;
   right: -1px;
-  background-color: white;
+  background-color: black;
   transform: rotate(45deg);
 }
 
@@ -524,7 +523,7 @@
   height: 1px;
   top: 2px;
   right: -1px;
-  background-color: white;
+  background-color: black;
   transform: rotate(-45deg);
 }
 
@@ -541,7 +540,7 @@
 .inst-title {
   color: grey;
   font-family: Gotham Pro, sans-serif;
-  margin-block-end: 0;
+  margin-bottom: 8px;
   text-align: right;
 }
 
@@ -554,10 +553,12 @@
 }
 
 .inst__img {
-  position: relative;
   display: inline-block;
-  max-width: 14.28%;
-  height: auto;
+  width: 14.28%;
+}
+
+.inst__img:nth-child(n+8) {
+  display: none;
 }
 
 .footer {
@@ -573,6 +574,10 @@
   display: flex;
   justify-content: space-between;
   padding: 0 200px 30px 200px;
+}
+
+.footer__content {
+  max-width: 175px;
 }
 
 .footer__title {
@@ -606,11 +611,6 @@
   text-decoration: underline;
 }
 
-.footer__social-link {
-  float: left;
-  margin-right: 25px;
-}
-
 .footer__button {
   background: black;
   color: white;
@@ -621,6 +621,24 @@
   width: 137px;
   height: 30px;
   margin-bottom: 25px;
+}
+
+.footer__button:hover {
+  color: grey;
+  border: 2px solid grey;
+}
+
+.footer__social-link {
+  display: inline-block;
+  float: left;
+  margin-right: 25px;
+}
+
+.footer__social-link:hover {
+  border: 1px solid grey;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
 
 .footer__text {
@@ -721,23 +739,24 @@
     margin-bottom: 87px;
   }
 
-  .stories__content {
-    flex-basis: 277px;
-  }
-
   .stories__img {
     height: 150px;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
   }
 
   .stories__text {
     font-size: 13px;
-    line-height: 17px;
-    margin-bottom: 25px;
+    line-height: 16px;
+    margin-top: 7px;
+    margin-bottom: 34px;
+  }
+  
+  .inst-title {
+    margin-bottom: 10px;
   }
 
   .inst {
-    margin-bottom: 92px;
+    margin-bottom: 94px;
   }
   
   .footer__wrap {
@@ -871,7 +890,7 @@
   .main__mobile-back {
     display: block;
     position: absolute;
-    background: linear-gradient(2.6deg, white 30px, black 30px, black 1610px, white 1610px);
+    background: linear-gradient(2.6deg, white 29px, black 30px, black 1609px, white 1610px);
     top: 900px;
     width: 100%;
     height: 1610px;
@@ -880,7 +899,7 @@
 
   .video {
     background: none;
-    margin-bottom: 110px;
+    margin-bottom: 112px;
   }
 
   .video__title {
@@ -923,8 +942,12 @@
     width: 0;
   }
 
+  .stories-title {
+    margin-bottom: 48px;
+  }
+
   .stories {
-    margin-bottom: 130px;
+    margin-bottom: 125px;
   }
 
   .stories-title
@@ -937,18 +960,12 @@
   ,
   .stories__link
   ,
-  .stories__date
-  ,
-  .stories__arrow
-  ,
-  .stories__arrow::after
-  ,
-  .stories__arrow::before {
+  .stories__date {
     color: white;
   }
 
   .stories__content {
-    flex-basis: 312px;
+    width: 46%;
   }
 
   .stories__content:nth-child(n+3) {
@@ -979,6 +996,24 @@
     font-weight: normal;
   }
 
+  .stories__arrow {
+    width: 47px;
+    background-color: white;
+    left: 10px;
+  }
+
+  .stories__arrow::after {
+    width: 8px;
+    top: -3px;
+    background-color: white;
+  }
+
+  .stories__arrow::before {
+    width: 8px;
+    top: 3px;
+    background-color: white;
+  }
+
   .stories__date {
     font-size: 15px;
     font-weight: normal;
@@ -986,23 +1021,29 @@
 
   .inst-title {
     font-size: 30px;
-    margin-block-end: 0.5em;
+    margin-bottom: 10px;
   }
 
   .inst {
     flex-wrap: wrap;
-    margin-bottom: 120px;
+    margin-bottom: 123px;
   }
 
   .inst__img {
-    max-width: 100%;
-    height: 170px;
-    flex-basis: 170px;
+    width: 25%;
+  }
+
+  .inst__img:nth-child(n+8) {
+    display: inline-block;
   }
 
   .footer__wrap {
     padding: 0 20px 50px 20px;
     justify-content: space-around;
+  }
+
+  .footer__content {
+    max-width: 156px;
   }
 
   .footer__title {
@@ -1011,7 +1052,7 @@
   }
 
   .footer__text {
-    word-spacing: 10px;
+    word-spacing: 5px;
   }
 
   .footer__button {
@@ -1139,11 +1180,17 @@
     font-size: 15px;
     line-height: 14px;
     padding-left: 14px;
+    margin-left: 0;
   }
 
   .product__price {
     font: bolder 20px/19px Gotham Pro, sans-serif;
     padding-left: 14px;
+    margin-left: 0;
+  }
+  
+  .product__items {
+    margin-right: 0;
   }
 
   .product__item {
@@ -1155,7 +1202,7 @@
   .main__mobile-back {
     display: block;
     position: absolute;
-    background: linear-gradient(2.6deg, white 30px, black 30px, black 1250px, white 1250px);
+    background: linear-gradient(2.6deg, white 29px, black 30px, black 1249px, white 1250px);
     top: 545px;
     width: 100%;
     height: 1250px;
@@ -1217,6 +1264,10 @@
   .stories__date {
     color: white;
   }
+
+  .stories__content {
+    width: 100%;
+  }
   
   .stories__content:nth-child(n+2) {
     display: none;
@@ -1248,7 +1299,20 @@
 
   .stories__arrow {
     width: 40px;
+    background-color: white;
     left: 12px;
+  }
+
+  .stories__arrow::after {
+    width: 8px;
+    top: -3px;
+    background-color: white;
+  }
+
+  .stories__arrow::before {
+    width: 8px;
+    top: 3px;
+    background-color: white;
   }
 
   .stories__date {
@@ -1269,8 +1333,7 @@
   }
 
   .inst__img {
-    max-width: 140px;
-    height: 140px;
+    width: 50%;
   }
 
   .inst__img:nth-child(n+7) {
@@ -1427,7 +1490,7 @@
   }
 
   .product {
-    margin-bottom: 75px;
+    margin-bottom: 73px;
   }
 
   .product__content {
@@ -1454,11 +1517,17 @@
     font-size: 15px;
     line-height: 14px;
     padding-left: 14px;
+    margin-left: 0;
   }
 
   .product__price {
     font: bolder 20px/19px Gotham Pro, sans-serif;
     padding-left: 14px;
+    margin-left: 0;
+  }
+
+  .product__items {
+    margin-right: 0;
   }
 
   .product__item {
@@ -1470,7 +1539,7 @@
   .main__mobile-back {
     display: block;
     position: absolute;
-    background: linear-gradient(2.6deg, white 30px, black 30px, black 1250px, white 1250px);
+    background: linear-gradient(2.6deg, white 29px, black 30px, black 1249px, white 1250px);
     top: 541px;
     width: 100%;
     height: 1250px;
@@ -1533,6 +1602,10 @@
     color: white;
   }
 
+  .stories__content {
+    width: 100%;
+  }
+
   .stories__content:nth-child(n+2) {
     display: none;
     max-width: none;
@@ -1564,7 +1637,20 @@
 
   .stories__arrow {
     width: 40px;
+    background-color: white;
     left: 12px;
+  }
+
+  .stories__arrow::after {
+    width: 8px;
+    top: -3px;
+    background-color: white;
+  }
+
+  .stories__arrow::before {
+    width: 8px;
+    top: 3px;
+    background-color: white;
   }
 
   .stories__date {
@@ -1580,13 +1666,11 @@
 
   .inst {
     flex-wrap: wrap;
-    justify-content: center;
     margin-bottom: 82px;
   }
 
   .inst__img {
-    max-width: 140px;
-    height: 140px;
+    width: 50%;
   }
 
   .inst__img:nth-child(n+7) {
